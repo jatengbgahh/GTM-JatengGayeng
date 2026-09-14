@@ -26,6 +26,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root}
       MYSQL_DATABASE: ${DB_NAME:-gtm-jateng-gayeng}
+      TZ: Asia/Jakarta
     ports:
       - "3307:3306"
     volumes:
